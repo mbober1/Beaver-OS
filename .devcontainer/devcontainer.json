@@ -1,0 +1,21 @@
+{
+  "name": "BeaverOS",
+  "dockerFile": "Dockerfile",
+
+  "mounts": ["source=/mnt/storage,target=/mnt/storage,type=bind"],
+
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/user/workspace/project,type=bind",
+  "workspaceFolder": "/home/user/workspace/project",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux" : "bash",
+        "extensions.ignoreRecommendations": true
+      },
+      "extensions": [
+        "mhutchie.git-graph"
+      ]
+    }
+  } 
+}

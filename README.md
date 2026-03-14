@@ -1,11 +1,12 @@
-# BeaverOS for Radxa Zero 3E
+# BeaverOS
 
 ### How to build
 #### Bare-metal
 Setup build
 ```
-mkdir radxa-build && radxa-build 
-repo init -u https://github.com/mbober1/beaver-os-radxa
+git clone https://github.com/mbober1/Beaver-OS.git
+cd Beaver-OS
+repo init -u https://github.com/mbober1/Beaver-OS.git -m default.xml
 repo sync -j$(nproc)
 ./setup-environment build
 ```
