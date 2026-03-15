@@ -26,11 +26,13 @@ MACHINE = "rock-5b-plus"
 DISTRO = "beaveros"
 INHERIT += "rm_work"
 
+TMPDIR = "/mnt/storage/beaveros"
 # DL_DIR ?= "/mnt/storage/yocto/downloads/"
 # SSTATE_DIR ?= "/mnt/storage/yocto/sstate-cache/"
 BB_GENERATE_MIRROR_TARBALLS = "1"
-INHERIT += "buildhistory"
-BUILDHISTORY_COMMIT = "1"
+BB_HASHSERVE_DB_DIR = "\${SSTATE_DIR}"
+# INHERIT += "buildhistory"
+# BUILDHISTORY_COMMIT = "1"
 
 EOF
 
@@ -44,7 +46,6 @@ LAYERS=" \
     $CWD/sources/meta-openembedded/meta-gnome \
     $CWD/sources/meta-swupdate \
     $CWD/sources/meta-openembedded/meta-filesystems \
-    $CWD/sources/meta-virtualization \
     $CWD/sources/meta-clang \
     $CWD/sources/meta-radxa \
     $CWD/sources/meta-beaver \
