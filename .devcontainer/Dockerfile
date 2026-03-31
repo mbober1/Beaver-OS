@@ -12,7 +12,7 @@ RUN apt-get -y update && \
     file gawk gcc git iputils-ping libacl1 liblz4-tool \
     locales python3 python3-git python3-jinja2 python3-pexpect \
     python3-pip python3-subunit socat texinfo unzip wget \
-    xz-utils zstd screen \
+    xz-utils zstd screen ssh \
 		&& \
 	apt-get clean -y && \
 	apt-get autoremove --purge -y && \
@@ -25,6 +25,6 @@ ENV LC_ALL=en_US.UTF-8
 RUN locale-gen $LANG
 
 RUN groupadd -r ${USERNAME} && useradd -m -s /bin/bash -r -g ${USERNAME} ${USERNAME}
-ADD --chmod=a+x https://storage.googleapis.com/git-repo-downloads/repo /bin/repo
+ADD --chmod=a+x+r https://storage.googleapis.com/git-repo-downloads/repo /bin/repo
 USER ${USERNAME}
 WORKDIR /home/${USERNAME}/workspace
