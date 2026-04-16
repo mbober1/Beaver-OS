@@ -47,7 +47,7 @@ LAYERS=" \
     $CWD/sources/meta-swupdate \
     $CWD/sources/meta-openembedded/meta-filesystems \
     $CWD/sources/meta-clang \
-    $CWD/sources/meta-radxa \
+    $CWD/sources/meta-beaver-bsp \
     $CWD/sources/meta-beaver \
 "
 
