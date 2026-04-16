@@ -1,7 +1,5 @@
-FROM ubuntu:22.04@sha256:1aa979d85661c488ce030ac292876cf6ed04535d3a237e49f61542d8e5de5ae0
+FROM ubuntu:24.04@sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194ebcc41c7b
 
-ARG UID=1000
-ARG GID=1000
 ARG USERNAME="ubuntu"
 ENV DEBIAN_FRONTEND=noninteractive
 SHELL ["/bin/bash", "-c"]
@@ -24,7 +22,6 @@ ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
 RUN locale-gen $LANG
 
-RUN groupadd -r ${USERNAME} && useradd -m -s /bin/bash -r -g ${USERNAME} ${USERNAME}
 ADD --chmod=a+x+r https://storage.googleapis.com/git-repo-downloads/repo /bin/repo
 USER ${USERNAME}
 WORKDIR /home/${USERNAME}/workspace
