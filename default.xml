@@ -9,9 +9,9 @@
   <remote fetch="https://github.com/sbabic" name="swupdate"/>
   <remote fetch="https://github.com/kraj" name="clang"/>
 
-  <project remote="oe"         name="openembedded-core"    path="sources/oe-core"                 revision="master"/>
-  <project remote="oe"         name="bitbake"              path="sources/bitbake"                 revision="master"/>
-  <project remote="oe"         name="meta-openembedded"    path="sources/meta-openembedded"       revision="master"/>
+  <project remote="oe"         name="openembedded-core"    path="sources/oe-core"/>
+  <project remote="oe"         name="bitbake"              path="sources/bitbake"                 revision="2.18"/>
+  <project remote="oe"         name="meta-openembedded"    path="sources/meta-openembedded"/>
   <project remote="yocto"      name="meta-arm"             path="sources/meta-arm"                revision="master"/>
   <project remote="yocto"      name="meta-rockchip"        path="sources/meta-rockchip"/>
   <project remote="clang"      name="meta-clang"           path="sources/meta-clang"              revision="master"/>
