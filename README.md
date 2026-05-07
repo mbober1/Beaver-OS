@@ -1,5 +1,11 @@
 # BeaverOS
 
+## Supported targets
+- Radxa Rock 5B+
+- Radxa Zero 3E
+- Luckfox Lyra Plus
+- STM32MP157C-DK2 
+
 ### How to build
 Clone repo
 ```
