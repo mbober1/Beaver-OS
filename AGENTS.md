@@ -21,8 +21,6 @@ Build the OTA bundle with `bitbake lab-image-minimal-update`. The repository REA
 - `default.xml` pins the OE/Yocto layer revisions and checkout paths; keep layer assumptions consistent with it.
 - `build/conf/` is generated, machine-local build configuration. Avoid treating it as distributable project metadata.
 
-For metadata changes, use `bitbake -p` and inspect enabled layers with `bitbake-layers show-layers` before attempting a full image build. No separate repository-wide test suite is documented; BitBake parsing and the affected recipe or image build are the available checks.
-
 ## Pitfalls
 
 - Run `setup-environment` from the workspace root. It appends settings to `build/conf/local.conf`; rerunning it in the same build directory can duplicate configuration.
