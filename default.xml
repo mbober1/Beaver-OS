@@ -8,6 +8,7 @@
   <remote fetch="https://github.com/mbober1" name="mbober"/>
   <remote fetch="https://github.com/sbabic" name="swupdate"/>
   <remote fetch="https://github.com/kraj" name="clang"/>
+  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
 
   <project remote="oe"         name="openembedded-core"    path="sources/oe-core"/>
   <project remote="oe"         name="bitbake"              path="sources/bitbake"                 revision="2.18"/>
@@ -18,5 +19,6 @@
   <project remote="swupdate"   name="meta-swupdate"        path="sources/meta-swupdate"/>
   <project remote="mbober"     name="meta-beaver-bsp"      path="sources/meta-beaver-bsp"/>
   <project remote="mbober"     name="meta-beaver"          path="sources/meta-beaver"/>
+  <project remote="qt5"        name="meta-qt5"             path="sources/meta-qt5"/>
 
 </manifest>
