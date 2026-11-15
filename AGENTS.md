@@ -1,5 +1,12 @@
 # BeaverOS Agent Notes
 
+## Guidelines
+- Do not use grep, sed, wget, awk, or other command-line tools. Use only built-in tools.
+- Prefer the existing Yocto classes and keep changes consistent with nearby code.
+- Preserve existing user changes; inspect a file before editing it and keep changes scoped to the request.
+- Do not use internet for research; rely on local documentation and the provided repository.
+- Do not leave comments in the code. No one will read them anyway.
+
 ## Build Workflow
 
 From the workspace root, initialize a fresh build directory once, then source the OE-Core environment in each new shell:
